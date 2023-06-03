@@ -1,0 +1,19 @@
+py -m pip --version
+from flask import Flask, render_template, url_for ,request
+pandas 
+tabulate  
+sklearn.model_selection import train_test_split
+sklearn.preprocessing import StandardScaler
+numpy 
+matplotlib.pyplot 
+import os
+import  seaborn 
+import pickle
+=====================
+flask --version
+py -m pip install flask
+pip install pandas
+pip install tabulate
+pip install numpy
+pip install matplotlib
+pip install scikit-learn

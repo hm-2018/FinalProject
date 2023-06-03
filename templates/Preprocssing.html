@@ -1,0 +1,61 @@
+{% extends "index.html" %}
+{% block content %}
+ <div class="row">
+     <div class="col-xl-6">
+         <div class="card mb-4">
+             <div class="card-header">
+                 <i class="fas fa-chart-area me-1"></i>Correlation Matrix</div>
+                <img src="static/image/coorleation1.png" alt ="" >
+         </div>
+     </div>
+     <div class="col-xl-6">
+         <div class="card mb-4">
+             <div class="card-header">
+                 <i class="fas fa-chart-bar me-1"></i>Bar Chart Age</div>
+
+                 <img src="static/image/myplot.png" alt="" >
+         </div>
+         <div class="card mb-4">
+             <div class="card-header">
+                 <i class="fas fa-chart-bar me-1"></i>Bar Chart Age</div>
+
+                 <img src="static/image/FM.png" alt="" >
+         </div>
+
+     </div>
+ </div>
+    <div class="card mb-4 ">
+    <div class="card-header">
+        <i class="fas fa-table me-1"></i>Describ Data , How many people have Heart Disase and Don't have Disease ?  <b>{{output}}</b></div>
+    <div class="card-body">
+        <table id="datatablesSimple" >
+             {% for table in tables %}
+            <thead>
+            <tr><th>{{titles[loop.index]}} </th> </tr>
+            </thead>
+            <tbody>
+               <tr><th><td>{{table | safe }} {% endfor %} </td></th></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+    <div class="card mb-4 ">
+    <div class="card-header">
+        <i class="fas fa-table me-1"></i>Explore Data with static & We Wnat how many female&male <b>{{sexoutput}}</b></div>
+    <div class="card-body" style="">
+        <table id="datatablesSimple1" >
+             {% for table in tables1 %}
+            <thead>
+            <tr ><th>{{titles1[loop.index]}} </th> </tr>
+            </thead>
+            <tbody>
+               <tr><th scope="row"><td>{{table | safe }} {% endfor %} </td></th></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+{% endblock %}
+
+

@@ -1,0 +1,53 @@
+{% extends "index.html" %}
+{% block content %}
+
+<div class="container-fluid px-4">
+
+    <h1 class="mt-4">Tables</h1>
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+        <li class="breadcrumb-item active">Tables</li>
+    </ol>
+    <div class="card mb-4">
+        <div class="card-body">
+            DataTables is a third party plugin that is used to generate the demo table below. For more information about DataTables, please visit the
+            <a target="_blank" href="https://datatables.net/">official DataTables documentation</a>
+
+        </div>
+    </div>
+    <div class="card mb-4">
+        <div class="card-header">
+                                <i class="fas fa-table me-1"></i>
+                                DataTable Example
+                            </div>
+        <div class="card-body">
+            <table id="datatablesSimple">
+                <tbody>
+    <tr><th scope="row" >Age</th><td >The age of the patient the big age will be increasing the heart attack</td></tr>
+    <tr><th scope="row">Sex</th><td> Sex of the patient The type will be (0 for Male, 1 for Female)</td></tr>
+    <tr><th scope="row">exang</th><td>Exercise-induced angina (1 = yes; 0 = no)</td></tr>
+    <tr><th scope="row">cp</th><td>Chest Pain type chest pain type Value 1: typical angina Value 2: atypical angina Value 3: non-anginal pain Value 4: asymptomatic</td></tr>
+    <tr><th scope="row">ca</th><td>number of major vessels (0-3) the more blood movement the better so people with ca equal to 0 are more likely to have heart disease</td></tr>
+    <tr><th scope="row">trtbps</th><td>  resting blood pressure (in mm Hg)</td></tr>
+    <tr><th scope="row">Chol</th><td> cholesterol in mg/dl fetched via BMI sensor value type 126-564</td></tr>
+    <tr><th scope="row">fbs</th><td>Fasting blood sugar > 120 mg/dl) (1 = true; 0 = false) </td></tr>
+    <tr><th scope="row">rest_ecg</th><td> Resting electrocardiographic results Value 0: Normal Value 1: having ST-T wave abnormality (T wave inversions and/or ST elevation or depression of > 0.05 mV) Value 2: showing probable or definite left ventricular hypertrophy by Estes’ criteria value type 0 or 1</td></tr>
+    <tr><th scope="row">thalach</th><td> maximum heart rate achieved 71-202	</td></tr>
+    <tr><th scope="row">output</th><td> output 0= less chance of heart attack 1= more chance of heart attack 0 or 1</td></tr>
+
+
+
+
+
+
+
+
+
+  </tbody>
+
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}
+

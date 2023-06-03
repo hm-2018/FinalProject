@@ -1,0 +1,13 @@
+pip --version
+py -m pip --version
+py -m pip  install flask
+flask --version
+pip install pandas
+pip install tabulate
+pip install numpy
+pip install matplotlib
+pip install scikit-learn
+
+
+==========================
+

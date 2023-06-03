@@ -1,0 +1,32 @@
+{% extends "index.html" %}
+{% block content %}
+ <div class="">
+	<h1> Predictor : From Social Network Ad </h1>
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict1')}}" method="post">
+    	<input type="number" name="age" placeholder="Age" required="required" />
+		<input type="number" name="sex" placeholder="Sex" required="required" />
+        <!--
+        <input type="number" name="cp" placeholder="cp" required="required" />
+        <input type="number" name="trtbps" placeholder="trtbps" required="required" />
+        <input type="number" name="chol" placeholder="chol" required="required" />
+
+        <input type="number" name="age11" placeholder="Age" required="required" />
+		<input type="number" name="sex11" placeholder="Sex" required="required" />
+        <input type="number" name="cp11" placeholder="cp" required="required" />
+        <input type="number" name="trtbps11" placeholder="trtbps" required="required" />
+        <input type="number" name="chol11" placeholder="chol" required="required" />
+         <input type="number" name="chol122" placeholder="chol" required="required" />
+-->
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+   <br>
+   <br>
+   {{prediction_text}}
+     {{lenxxxx}}
+
+
+ </div>
+
+{% endblock %}
+
